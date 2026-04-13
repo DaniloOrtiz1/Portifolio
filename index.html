@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dev Junior | Banco de Dados & Full Stack</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- ======= NAV ======= -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-logo">
+      <span class="logo-bracket">&lt;</span>Dev<span class="logo-accent">Junior</span><span class="logo-bracket">/&gt;</span>
+    </div>
+    <button class="hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="#hero" class="nav-link" data-label="01">Início</a></li>
+      <li><a href="#sobre" class="nav-link" data-label="02">Sobre</a></li>
+      <li><a href="#skills" class="nav-link" data-label="03">Skills</a></li>
+      <li><a href="#projetos" class="nav-link" data-label="04">Projetos</a></li>
+      <li><a href="#contato" class="nav-link" data-label="05">Contato</a></li>
+      <li><a href="https://github.com/DaniloOrtiz1" target="_blank" class="nav-cta">GitHub <span class="arrow">↗</span></a></li>
+    </ul>
+  </nav>
+
+  <!-- ======= HERO ======= -->
+  <section class="hero" id="hero">
+    <!-- Grid de fundo -->
+    <div class="hero-grid"></div>
+    <!-- Partículas flutuantes -->
+    <div class="particles" id="particles"></div>
+
+    <div class="hero-layout">
+      <!-- COLUNA ESQUERDA: foto -->
+      <div class="hero-photo-col">
+        <div class="photo-frame">
+          <div class="photo-border-glow"></div>
+          <div class="photo-placeholder">
+            <img src="imagem/danporti.png" alt="Danilo Ortiz" /> 
+            <div class="avatar-fallback">
+              <svg viewBox="0 0 120 140" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="60" cy="48" r="32" fill="#00f5c4" opacity="0.15" stroke="#00f5c4" stroke-width="1.5"/>
+                <circle cx="60" cy="44" r="22" fill="#00f5c4" opacity="0.25"/>
+                <path d="M16 130 C16 100 104 100 104 130" fill="#00f5c4" opacity="0.15" stroke="#00f5c4" stroke-width="1.5"/>
+                <text x="60" y="50" text-anchor="middle" fill="#00f5c4" font-size="28" font-family="monospace" font-weight="bold">JS</text>
+              </svg>
+              <p class="avatar-hint"></p>
+            </div>
+          </div>
+          <!-- Tags de tech flutuando na frente da foto -->
+          <div class="tech-badges">
+            <span class="tech-badge badge-1">React</span>
+            <span class="tech-badge badge-2">Node.js</span>
+            <span class="tech-badge badge-3">SQL</span>
+            <span class="tech-badge badge-4">JS</span>
+            <span class="tech-badge badge-5">HTML</span>
+            <span class="tech-badge badge-6">CSS</span>
+          </div>
+        </div>
+        <div class="photo-since">
+          <span class="since-label">Estudando desde</span>
+          <span class="since-year">2022</span>
+        </div>
+      </div>
+
+      <!-- COLUNA DIREITA: texto -->
+      <div class="hero-text-col">
+        <div class="hero-tag">
+          <span class="tag-dot"></span> Disponível para contratação
+        </div>
+        <h1 class="hero-title">
+          <span class="title-line reveal-line">Olá, sou</span>
+          <span class="title-line reveal-line name-line">Danilo Ortiz<span class="cursor-blink">_</span></span>
+          <span class="title-line reveal-line role-line">Dev <span class="accent">Junior</span></span>
+        </h1>
+        <p class="hero-sub">
+          Formado em <strong>Banco de Dados</strong>, apaixonado por tecnologia desde 2022.
+          Construo aplicações web completas — do banco de dados ao frontend.
+        </p>
+        <div class="hero-actions">
+          <a href="#projetos" class="btn-primary">Ver Projetos <span>→</span></a>
+          <a href="#contato" class="btn-ghost">Falar comigo</a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat">
+            <span class="stat-n">3+</span>
+            <span class="stat-l">Anos estudando</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat">
+            <span class="stat-n">6+</span>
+            <span class="stat-l">Tecnologias</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat">
+            <span class="stat-n">∞</span>
+            <span class="stat-l">Vontade de crescer</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Scroll indicator -->
+    <div class="scroll-hint">
+      <span>scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ======= SOBRE ======= -->
+  <section class="sobre" id="sobre">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-num">02.</span>
+        <h2 class="section-title">Sobre mim</h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="sobre-grid">
+        <div class="sobre-text">
+          <p>
+            Sou um desenvolvedor <span class="highlight">júnior apaixonado</span> por tecnologia, com formação em
+            <span class="highlight">Banco de Dados</span>. Comecei minha jornada em 2022 e desde então venho
+            construindo conhecimento sólido em desenvolvimento web, tanto no frontend quanto no backend.
+          </p>
+          <p>
+            Minha base em banco de dados me dá uma visão diferenciada — entendo a arquitetura dos dados desde
+            a modelagem até a entrega no browser. Estudo com consistência e aplico tudo em projetos reais disponíveis
+            no meu <span class="highlight">GitHub</span>.
+          </p>
+          <p>
+            Busco minha <span class="highlight">primeira oportunidade profissional</span> para crescer dentro
+            de um time, contribuir com o que já aprendi e absorver muito mais no dia a dia.
+          </p>
+          <div class="sobre-info">
+            <div class="info-item">
+              <span class="info-icon">🎓</span>
+              <div>
+                <strong>Formação</strong>
+                <span>Banco de Dados</span>
+              </div>
+            </div>
+            <div class="info-item">
+              <span class="info-icon">📍</span>
+              <div>
+                <strong>Localização</strong>
+                <span>Brasil</span>
+              </div>
+            </div>
+            <div class="info-item">
+              <span class="info-icon">🚀</span>
+              <div>
+                <strong>Status</strong>
+                <span>Aberto a oportunidades</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="sobre-timeline">
+          <h3 class="timeline-title">Jornada</h3>
+          <div class="timeline">
+            <div class="tl-item">
+              <div class="tl-dot"></div>
+              <div class="tl-content">
+                <span class="tl-year">2022</span>
+                <strong>Início da jornada</strong>
+                <p>Primeiros passos com HTML, CSS e lógica de programação</p>
+              </div>
+            </div>
+            <div class="tl-item">
+              <div class="tl-dot"></div>
+              <div class="tl-content">
+                <span class="tl-year">2023</span>
+                <strong>JavaScript & Banco de Dados</strong>
+                <p>Aprofundamento em JS, SQL e modelagem de dados</p>
+              </div>
+            </div>
+            <div class="tl-item">
+              <div class="tl-dot"></div>
+              <div class="tl-content">
+                <span class="tl-year">2025</span>
+                <strong>React & Node.js</strong>
+                <p>Desenvolvimento fullstack com React no frontend e Node no backend</p>
+              </div>
+            </div>
+            <div class="tl-item tl-current">
+              <div class="tl-dot"></div>
+              <div class="tl-content">
+                <span class="tl-year">2026</span>
+                <strong>Pronto para o mercado</strong>
+                <p>Buscando minha primeira vaga e continuando a evoluir</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======= SKILLS ======= -->
+  <section class="skills" id="skills">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-num">03.</span>
+        <h2 class="section-title">Skills & Tecnologias</h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="skills-grid">
+
+        <div class="skill-card" data-delay="0">
+          <div class="skill-icon">
+            <svg viewBox="0 0 32 32" fill="none"><path d="M6 4h20l-2 22-8 2-8-2L6 4z" fill="#E34F26"/><path d="M16 6v22l6.5-1.8L24.5 6H16z" fill="#EF652A"/><path d="M11 10h5v2H13l.3 4H16v2h-2.5l.2 3 2.3.6V24l-4.3-1.2L11 10z" fill="#fff"/><path d="M21 10h-5v2h2.7l-.3 4H16v2h2.3l-.3 3-2 .6V24l4.3-1.2L21 10z" fill="#fff"/></svg>
+          </div>
+          <h3>HTML5</h3>
+          <p>Estruturação semântica, acessibilidade e boas práticas</p>
+          <div class="skill-bar"><div class="skill-fill" style="--w:80%"></div></div>
+        </div>
+
+        <div class="skill-card" data-delay="100">
+          <div class="skill-icon">
+            <svg viewBox="0 0 32 32" fill="none"><path d="M6 4h20l-2 22-8 2-8-2L6 4z" fill="#264DE4"/><path d="M16 6v22l6.5-1.8L24.5 6H16z" fill="#2965F1"/><path d="M11 10h5v2H13.2l.2 3H16v2h-2.4l.2 3 2.2.6V23l-4-1.1L11 10z" fill="#fff"/><path d="M21 10h-5v2h2.6l-.2 3H16v2h2.2l-.2 3-2 .6V23l4-1.1L21 10z" fill="#fff"/></svg>
+          </div>
+          <h3>CSS3</h3>
+          <p>Flexbox, Grid, animações e design responsivo</p>
+          <div class="skill-bar"><div class="skill-fill" style="--w:75%"></div></div>
+        </div>
+
+        <div class="skill-card" data-delay="200">
+          <div class="skill-icon">
+            <svg viewBox="0 0 32 32" fill="none"><rect x="2" y="2" width="28" height="28" rx="2" fill="#F7DF1E"/><path d="M9 25l2.2-1.3c.4.7.8 1.3 1.7 1.3.9 0 1.4-.4 1.4-1.7V16h2.8v7.4c0 2.8-1.6 4-4 4C11 27.4 9.8 26.4 9 25zm8.5-.3l2.2-1.3c.6 1 1.3 1.7 2.6 1.7 1.1 0 1.8-.5 1.8-1.3 0-.9-.7-1.2-1.9-1.8l-.6-.3c-1.9-.8-3.2-1.8-3.2-4 0-2 1.5-3.5 3.9-3.5 1.7 0 2.9.6 3.7 2.2l-2 1.4c-.5-.8-.9-1.1-1.7-1.1-.8 0-1.3.5-1.3 1.1 0 .8.5 1.1 1.6 1.6l.6.3c2.3 1 3.5 2 3.5 4.2 0 2.4-1.9 3.7-4.4 3.7-2.5 0-4.1-1.2-4.8-2.9z" fill="#333"/></svg>
+          </div>
+          <h3>JavaScript</h3>
+          <p>ES6+, DOM, fetch API, lógica e manipulação de dados</p>
+          <div class="skill-bar"><div class="skill-fill" style="--w:70%"></div></div>
+        </div>
+
+        <div class="skill-card" data-delay="300">
+          <div class="skill-icon">
+            <svg viewBox="0 0 32 32" fill="none"><circle cx="16" cy="16" r="3" fill="#61DAFB"/><path d="M16 10C20.5 10 24.5 11 27 13c1.2 1 1.8 2 1.8 3s-.6 2-1.8 3C24.5 21 20.5 22 16 22s-8.5-1-11-3C3.8 18 3.2 17 3.2 16s.6-2 1.8-3C7.5 11 11.5 10 16 10z" stroke="#61DAFB" stroke-width="1.5" fill="none"/><path d="M11.5 13C13.7 9.1 16.5 6.5 18.5 6.5c1 0 1.8.7 2.3 2C21.4 10 21.5 12 21 14.5c-.5 2.5-1.5 4.7-2.8 6.2-1.2 1.4-2.3 2-3.2 2-1 0-1.8-.7-2.3-2-.5-1.5-.6-3.5-.1-5.9.2-.9.5-1.9.9-2.8z" stroke="#61DAFB" stroke-width="1.5" fill="none"/><path d="M11.5 19C13.7 22.9 16.5 25.5 18.5 25.5c1 0 1.8-.7 2.3-2 .6-1.5.7-3.5.2-6-.5-2.5-1.5-4.7-2.8-6.2-1.2-1.4-2.3-2-3.2-2-1 0-1.8.7-2.3 2-.5 1.5-.6 3.5-.1 5.9.2.9.5 1.9.9 2.8z" stroke="#61DAFB" stroke-width="1.5" fill="none"/></svg>
+          </div>
+          <h3>React</h3>
+          <p>Componentes, hooks, estado e props</p>
+          <div class="skill-bar"><div class="skill-fill" style="--w:65%"></div></div>
+        </div>
+
+        <div class="skill-card" data-delay="400">
+          <div class="skill-icon">
+            <svg viewBox="0 0 32 32" fill="none"><path d="M16 3l11 6v12l-11 6L5 21V9L16 3z" fill="#339933"/><path d="M21 19.3c.3.5.3 1.1-.2 1.5-1.5 1-3.2 1.2-4.5 1.2-2.8 0-5.2-1.5-5.2-4.3V10h2.5v7.5c0 1.5 1 2 2.7 2 1 0 2-.3 2.8-.7l1.9.5z" fill="#fff"/><path d="M23 12.7c0 1-.7 1.7-1.7 1.7s-1.7-.7-1.7-1.7.7-1.7 1.7-1.7 1.7.7 1.7 1.7z" fill="#fff"/></svg>
+          </div>
+          <h3>Node.js</h3>
+          <p>APIs REST, Express, integração com banco de dados</p>
+          <div class="skill-bar"><div class="skill-fill" style="--w:60%"></div></div>
+        </div>
+
+        <div class="skill-card highlight-card" data-delay="500">
+          <div class="skill-icon">
+            <svg viewBox="0 0 32 32" fill="none"><rect x="3" y="6" width="26" height="20" rx="2" fill="#336791"/><path d="M16 10c3.3 0 6 1.3 6 3v6c0 1.7-2.7 3-6 3s-6-1.3-6-3v-6c0-1.7 2.7-3 6-3z" stroke="#fff" stroke-width="1.2" fill="none"/><ellipse cx="16" cy="13" rx="6" ry="2" fill="none" stroke="#fff" stroke-width="1.2"/></svg>
+          </div>
+          <h3>Banco de Dados</h3>
+          <p>SQL, modelagem relacional, consultas, procedures — minha <strong>especialidade</strong></p>
+          <div class="skill-bar"><div class="skill-fill" style="--w:88%"></div></div>
+          <span class="card-badge">⭐ Formação</span>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ======= PROJETOS ======= -->
+  <section class="projetos" id="projetos">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-num">04.</span>
+        <h2 class="section-title">Projetos</h2>
+        <div class="section-line"></div>
+      </div>
+      <p class="projetos-sub">Todos os projetos estão disponíveis no meu GitHub. Cada um representa um passo na minha evolução.</p>
+      <div class="projetos-grid">
+
+        <div class="projeto-card featured">
+          <div class="projeto-top">
+            <span class="proj-tag">Fullstack</span>
+            <div class="proj-links">
+              <a href="https://github.com/DaniloOrtiz1" target="_blank" title="GitHub">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12c0 4.42 2.87 8.17 6.84 9.5.5.09.68-.22.68-.48v-1.7c-2.78.6-3.37-1.34-3.37-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.61.07-.61 1 .07 1.53 1.03 1.53 1.03.89 1.52 2.34 1.08 2.91.83.09-.65.35-1.08.63-1.33-2.22-.25-4.56-1.11-4.56-4.95 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.64 0 0 .84-.27 2.75 1.03A9.56 9.56 0 0112 6.8c.85 0 1.71.11 2.51.33 1.91-1.3 2.75-1.03 2.75-1.03.55 1.37.2 2.39.1 2.64.64.7 1.03 1.59 1.03 2.68 0 3.85-2.34 4.7-4.57 4.95.36.31.68.92.68 1.85v2.74c0 .27.18.58.69.48A10.01 10.01 0 0022 12c0-5.52-4.48-10-10-10z"/></svg>
+              </a>
+              <a href="#" target="_blank" title="Demo">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/></svg>
+              </a>
+            </div>
+          </div>
+          <h3>Sistema de Cadastro</h3>
+          <p>Aplicação fullstack com Node.js + React para gerenciamento de dados, integrado com banco relacional SQL e CRUD completo.</p>
+          <div class="proj-techs">
+            <span>React</span><span>Node.js</span><span>SQL</span><span>Express</span>
+          </div>
+        </div>
+
+        <div class="projeto-card">
+          <div class="projeto-top">
+            <span class="proj-tag">Frontend</span>
+            <div class="proj-links">
+              <a href="https://github.com" target="_blank" title="GitHub">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12c0 4.42 2.87 8.17 6.84 9.5.5.09.68-.22.68-.48v-1.7c-2.78.6-3.37-1.34-3.37-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.61.07-.61 1 .07 1.53 1.03 1.53 1.03.89 1.52 2.34 1.08 2.91.83.09-.65.35-1.08.63-1.33-2.22-.25-4.56-1.11-4.56-4.95 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.64 0 0 .84-.27 2.75 1.03A9.56 9.56 0 0112 6.8c.85 0 1.71.11 2.51.33 1.91-1.3 2.75-1.03 2.75-1.03.55 1.37.2 2.39.1 2.64.64.7 1.03 1.59 1.03 2.68 0 3.85-2.34 4.7-4.57 4.95.36.31.68.92.68 1.85v2.74c0 .27.18.58.69.48A10.01 10.01 0 0022 12c0-5.52-4.48-10-10-10z"/></svg>
+              </a>
+              <a href="#" target="_blank" title="Demo">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/></svg>
+              </a>
+            </div>
+          </div>
+          <h3>Landing Page Responsiva</h3>
+          <p>Página institucional responsiva criada com HTML, CSS e JavaScript puro. Foco em performance e boas práticas.</p>
+          <div class="proj-techs">
+            <span>HTML</span><span>CSS</span><span>JavaScript</span>
+          </div>
+        </div>
+
+        <div class="projeto-card">
+          <div class="projeto-top">
+            <span class="proj-tag">Backend</span>
+            <div class="proj-links">
+              <a href="https://github.com" target="_blank" title="GitHub">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12c0 4.42 2.87 8.17 6.84 9.5.5.09.68-.22.68-.48v-1.7c-2.78.6-3.37-1.34-3.37-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.61.07-.61 1 .07 1.53 1.03 1.53 1.03.89 1.52 2.34 1.08 2.91.83.09-.65.35-1.08.63-1.33-2.22-.25-4.56-1.11-4.56-4.95 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.64 0 0 .84-.27 2.75 1.03A9.56 9.56 0 0112 6.8c.85 0 1.71.11 2.51.33 1.91-1.3 2.75-1.03 2.75-1.03.55 1.37.2 2.39.1 2.64.64.7 1.03 1.59 1.03 2.68 0 3.85-2.34 4.7-4.57 4.95.36.31.68.92.68 1.85v2.74c0 .27.18.58.69.48A10.01 10.01 0 0022 12c0-5.52-4.48-10-10-10z"/></svg>
+              </a>
+            </div>
+          </div>
+          <h3>API REST com Node</h3>
+          <p>API para gerenciamento de usuários com autenticação JWT, integrada com banco de dados e documentação básica.</p>
+          <div class="proj-techs">
+            <span>Node.js</span><span>Express</span><span>SQL</span><span>JWT</span>
+          </div>
+        </div>
+
+      </div>
+      <div class="projetos-cta">
+        <a href="https://github.com/DaniloOrtiz1" target="_blank" class="btn-outline">
+          Ver todos no GitHub <span>↗</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======= CONTATO ======= -->
+  <section class="contato" id="contato">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-num">05.</span>
+        <h2 class="section-title">Contato</h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="contato-inner">
+        <div class="contato-texto">
+          <h3>Vamos conversar?</h3>
+          <p>Estou em busca da minha <strong>primeira oportunidade</strong> como desenvolvedor. Se você tem uma vaga ou quer bater um papo sobre tecnologia, me manda uma mensagem!</p>
+          <div class="contato-links">
+            <a href="mailto:seuemail@email.com" class="contato-item">
+              <span class="ci-icon">✉</span>
+              <span>danilomm87@hotmail.com</span>
+            </a>
+            <a href="https://github.com/DaniloOrtiz1" target="_blank" class="contato-item">
+              <span class="ci-icon">⌥</span>
+              <span>github.com/DaniloOrtiz1</span>
+            </a>
+            <a href="https://www.linkedin.com/in/danilo-ortiz-monteiro/" target="_blank" class="contato-item">
+              <span class="ci-icon">in</span>
+              <span>linkedin.com/in/danilo-ortiz-monteiro</span>
+            </a>
+          </div>
+        </div>
+        <form class="contato-form" id="contato-form">
+          <div class="form-group">
+            <label for="nome">Nome</label>
+            <input type="text" id="nome" placeholder="Nome" required />
+          </div>
+          <div class="form-group">
+            <label for="email">danilomm87@hotmail.com</label>
+            <input type="email" id="email" placeholder="Email" required />
+          </div>
+          <div class="form-group">
+            <label for="msg">Mensagem</label>
+            <textarea id="msg" rows="4" placeholder="Olá! Tenho uma oportunidade para você..." required></textarea>
+          </div>
+          <button type="submit" class="btn-primary form-btn">Enviar mensagem <span>→</span></button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======= FOOTER ======= -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-logo">
+        <span class="logo-bracket">&lt;</span>Dev<span class="logo-accent">Junior</span><span class="logo-bracket">/&gt;</span>
+      </div>
+      <p>Danilo Ortiz · 2026</p>
+      <div class="footer-scroll-top">
+        <a href="#hero">↑ Topo</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
